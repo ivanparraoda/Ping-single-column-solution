@@ -3,32 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <div class="wrapper">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
 
-  We are launching soon!
+    <div class="info-box">
+      <div class="headings">
+        <h2>  We are launching <span>soon!</span> </h2>
+        <p>  Subscribe and get notified</p>
+      </div>
+     
+      <form>
+        <div class="form1">
+      <div class="contact-text">
+       
+        <input type="text" placeholder="Your email adress... ">
+      </div>
 
-  Subscribe and get notified
+      <div class="button">
+        <button>Notify Me</button>
+      </div>
+    </div>
+    </form>
+    </div>
+    <div class="img-dash">
+      <img src="./images/illustration-dashboard.png" alt="">
+    </div>
+  </div>
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
 
+
+  
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="social">
+      <a href="#"><img src="./images/icon-facebook.svg" alt="facebook logo"></a>
+      <a href="#"><img src="./images/icon-twitter.svg" alt="twitter logo"></a>
+      <a href="#"><img src="./images/icon-instagram.svg" alt="instagram logo"></a>
+    </div>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
 </html>
