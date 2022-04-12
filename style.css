@@ -122,8 +122,10 @@ footer p{
 
     form{
         
-        padding-left: 500px;
-        padding-right: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       
     }
 
    .form1{

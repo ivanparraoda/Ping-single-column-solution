@@ -12,7 +12,7 @@
 
 
 </head>
-<body>
+<body onload="document.form1.text1.focus()">
   <div class="wrapper">
     <div class="logo">
       <img src="./images/logo.svg" alt="">
@@ -27,8 +27,8 @@
       <form>
         <div class="form1">
       <div class="contact-text">
-       
-        <input type="text" placeholder="Your email adress... ">
+      
+        <input type="text" placeholder="Your email adress... " onclick="ValidateEmail(document.form1.text1)">
       </div>
 
       <div class="button">
@@ -54,5 +54,6 @@
     </div>
     <p>&copy; Copyright Ping. All rights reserved.</p>
   </footer>
+  <script src="email-validation.js"></script>
 </body>
 </html>
