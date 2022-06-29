@@ -12,7 +12,7 @@
 
 
 </head>
-<body onload="document.form1.text1.focus()">
+<body >
   <div class="wrapper">
     <div class="logo">
       <img src="./images/logo.svg" alt="">
@@ -23,19 +23,28 @@
         <h2>  We are launching <span>soon!</span> </h2>
         <p>  Subscribe and get notified</p>
       </div>
-     
-      <form>
-        <div class="form1">
-      <div class="contact-text">
       
-        <input type="text" placeholder="Your email adress... " onclick="ValidateEmail(document.form1.text1)">
-      </div>
 
-      <div class="button">
-        <button>Notify Me</button>
+
+
+      
+      <form id="form" action="/" method="GET">
+        <div class="form1">
+          <div class="contact-text">
+      
+        <input id="password" name="email" type="text" placeholder="Your email adress... "  >
+        <div id="error"></div>
+            
+
       </div>
-    </div>
-    </form>
+      
+      <div > 
+        <button type="submit">Notify Me</button>
+      </div>
+      </div>
+      </form>
+
+
     </div>
     <div class="img-dash">
       <img src="./images/illustration-dashboard.png" alt="">
@@ -54,6 +63,6 @@
     </div>
     <p>&copy; Copyright Ping. All rights reserved.</p>
   </footer>
-  <script src="email-validation.js"></script>
+  <script defer src="script.js"></script>
 </body>
 </html>
